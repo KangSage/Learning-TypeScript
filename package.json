@@ -1,0 +1,9 @@
+{
+  "name": "Learning-TypeScript",
+  "version": "1.0.0",
+  "description": "TypeScript Learning for Full Stack Development.",
+  "main": "index.js",
+  "repository": "https://github.com/KangSage/Learning-TypeScript.git",
+  "author": "KangSage <ksage@knou.ac.kr>",
+  "license": "MIT"
+}
