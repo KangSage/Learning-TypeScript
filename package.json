@@ -5,5 +5,6 @@
   "main": "index.js",
   "repository": "https://github.com/KangSage/Learning-TypeScript.git",
   "author": "KangSage <ksage@knou.ac.kr>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
