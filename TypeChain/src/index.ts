@@ -1,6 +1,6 @@
 class Human {
     public name: string;
-    public age: number;
+    private age: number;
     public gender: string;
     constructor(name: string, age: number, gender: string) {
         this.name = name;
