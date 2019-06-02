@@ -1,0 +1,13 @@
+{
+  "name": "TypeChain",
+  "version": "1.0.0",
+  "description": "Learning Typescript by making a Blockchain with it.",
+  "main": "index.js",
+  "repository": "https://github.com/KangSage/Learning-TypeScript/tree/master/TypeChain",
+  "author": "KangSage",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "tsc"
+  }
+}
