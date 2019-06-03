@@ -10,7 +10,9 @@
     "start": "tsc-watch --onSuccess \" node dist/index.js\" "
   },
   "devDependencies": {
-    "tsc-watch": "^2.2.1"
+    "tsc-watch": "^2.2.1",
+    "tslint": "^5.17.0",
+    "typescript-tslint-plugin": "^0.4.0"
   },
   "dependencies": {
     "crypto-js": "^3.1.9-1",
