@@ -40,11 +40,11 @@ class Block {
 
 const genesisBlock: Block = new Block(1, "2020202002020", "", "Hello", 123456);
 
-let blockchain: Block[] = [genesisBlock];
+let blockChain: Block[] = [genesisBlock];
 
-const getBlockchain = (): Block[] => blockchain;
+const getBlockChain = (): Block[] => blockChain;
 
-const getLatestBlock = (): Block => blockchain[blockchain.length - 1];
+const getLatestBlock = (): Block => blockChain[blockChain.length - 1];
 
 const getNewTimeStamp = (): number => Math.round(new Date().getTime() / 1000);
 
@@ -81,7 +81,7 @@ const isBlockValid = (candidateBlock: Block, previousBlock: Block): boolean => {
 
 const addBlock = (candidateBlock: Block): void => {
     if (isBlockValid(candidateBlock, getLatestBlock())) {
-        blockchain.push(candidateBlock);
+        blockChain.push(candidateBlock);
     }
 };
 
@@ -93,7 +93,8 @@ setInterval(() => {
     console.log(createNewBlock(new Date().toISOString()));
 }, 1000 * 10);
 
-console.log(blockchain);
+console.log(getBlockChain());
+console.log(blockChain);
 
 
 export { };
