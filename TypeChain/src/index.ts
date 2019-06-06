@@ -16,10 +16,10 @@ class Block {
         typeof aBlock.timestamp === "number" &&
         typeof aBlock.data === "string";
 
-    public index: number;
-    public hash: string;
-    public previousHash: string;
     public data: string;
+    public hash: string;
+    public index: number;
+    public previousHash: string;
     public timestamp: number;
 
     constructor(
@@ -37,10 +37,9 @@ class Block {
     }
 }
 
-
 const genesisBlock: Block = new Block(1, "2020202002020", "", "Hello", 123456);
 
-let blockChain: Block[] = [genesisBlock];
+const blockChain: Block[] = [genesisBlock];
 
 const getBlockChain = (): Block[] => blockChain;
 
@@ -85,16 +84,10 @@ const addBlock = (candidateBlock: Block): void => {
     }
 };
 
-// createNewBlock("second block");
-// createNewBlock("third block");
-// createNewBlock("fourth block");
-
 setInterval(() => {
     console.log(createNewBlock(new Date().toISOString()));
 }, 1000 * 10);
 
 console.log(getBlockChain());
-console.log(blockChain);
-
 
 export { };
